@@ -12,6 +12,8 @@ VS Code running on Linux, nodejs, typescript.
 
 ## Start time
 
+17:15:00
+
 ## Assumptions
 
 ## End time
