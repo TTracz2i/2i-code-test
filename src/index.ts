@@ -1,5 +1,11 @@
+import iterate from './iterate';
+
 function main() {
-  console.log('Hello world!');
+  iterate(-1, -5, hello);
+}
+
+function hello() {
+  console.log('hello');
 }
 
 main();
