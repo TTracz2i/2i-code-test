@@ -10,6 +10,10 @@ _Please upload to a public Github repository and share the link._
 
 VS Code running on Linux, nodejs, typescript.
 
+## How to run it
+
+You need a pc with current node lts installed. In main folder run `npm i` and `npm run start`
+
 ## Start time
 
 17:15:00
