@@ -1,11 +1,16 @@
 import iterate from './iterate';
 
-function main() {
-  iterate(-1, -5, hello);
+const counter = () => {
+  let i = 0;
+  return () => {
+    i++;
+    console.log(i);
+  }
 }
 
-function hello() {
-  console.log('hello');
+function main() {
+  const count = counter();
+  iterate(1, 1, count);
 }
 
 main();
