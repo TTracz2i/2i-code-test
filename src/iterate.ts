@@ -14,7 +14,7 @@ export default function iterate(
     object();
   }
   
-  const xMultiplier = time + 1 - (time - 1) * 1.5; // X will increase by 2 second time and by 1.5 third time. 
+  const xMultiplier = time + 1 - (time - 1) * 1.5; // X will increase 2 times on second run and 1.5 times on third run. 
 
   if (time < 3)
     iterate(Math.abs(a) + 1, Math.abs(x) * xMultiplier, object, time + 1); // using math.abs to make sure it will iterate correctly on negative numbers.
