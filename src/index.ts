@@ -1,7 +1,7 @@
 import iterate from './iterate';
 
 function main() {
-  iterate(-1, -5, hello);
+  iterate(3, 5, hello);
 }
 
 function hello() {

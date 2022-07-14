@@ -1,19 +1,21 @@
 export default function iterate(
   a: number,
   x: number,
-  object: () => void = () => {},
-  time = 1,
+  code: () => any = () => {},
 ) {
+  iterator(a, x, code);
+  iterator(a + 1, x * 2, code);
+  iterator(a + 2, x * 3, code);
+}
+
+function iterator(a: number, x: number, code: () => any) {
   if (a === 0 || x === 0) return;
 
-  const multiples = x / a;
+  const multiples = Math.floor(x / a);
 
   if (multiples <= 0) return; // check if the numbers had opposite sign
 
   for (let i = 0; i < multiples; i++) {
-    object();
+    code();
   }
-
-  if (time < 3)
-    iterate(Math.abs(a) + 1, Math.abs(x) * (time + 1), object, time + 1); // using math.abs to make sure it will iterate correctly on negative numbers.
 }
