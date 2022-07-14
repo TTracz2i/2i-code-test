@@ -8,11 +8,15 @@ _Please upload to a public Github repository and share the link._
 
 ## Tools used
 
-VS Code running on Linux, nodejs, typescript.
+VS Code running on Linux, nodejs, typescript, jest, ts-jest.
 
 ## How to run it
 
 You need a pc with current node lts installed. In main folder run `npm i` and `npm run start`
+
+## How to test it
+
+In main foler fun `npx jest`.
 
 ## Start time
 
