@@ -6,7 +6,7 @@ export default function iterate(
 ) {
   if (a === 0 || x === 0) return;
 
-  const multiples = x / a;
+  const multiples = Math.floor(x / a);
 
   if (multiples <= 0) return; // check if the numbers had opposite sign
 
@@ -14,6 +14,8 @@ export default function iterate(
     object();
   }
 
+  const times = time + 1 - (time - 1) * 1.5;
+
   if (time < 3)
-    iterate(Math.abs(a) + 1, Math.abs(x) * (time + 1), object, time + 1); // using math.abs to make sure it will iterate correctly on negative numbers.
+    iterate(Math.abs(a) + 1, Math.abs(x) * times, object, time + 1); // using math.abs to make sure it will iterate correctly on negative numbers.
 }
